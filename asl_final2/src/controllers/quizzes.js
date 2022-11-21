@@ -2,7 +2,7 @@ const express = require('express');
 const quizCtlr = express.Router();
 const { Quiz, Question, Choice } = require('../models/index');
 const { quizzIsValid } = require('../middlewares/forms');
-const isAuthenticated = require('../middlewares/auth');
+//const isAuthenticated = require('../middlewares/auth');
 
 quizCtlr.get('/', async (req, res) => {
   const quizzes = await Quiz.findAll({

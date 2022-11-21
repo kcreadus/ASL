@@ -12,6 +12,47 @@ code {
     monospace;
 }
 
-ul {
-  list-style: none;
+ul li {
+  display: inline-block;
+  margin: 1.25em;
+}
+
+a {
+  text-decoration: none;
+  color: #316a67;
+}
+
+header {
+  background-color: #2c4751;
+  height: 4em;
+}
+
+#loginContainer {
+  margin-top: 40%;
+  text-align: center;
+}
+
+#loginContainer h1 {
+  font-size: 3em;
+}
+
+#loginContainer p {
+  font-size: 1.25em;
+}
+
+#loginContainer a {
+  font-size: 1em;
+  color: #1c3a38;
+}
+
+#homeContainer {
+  margin-top: 8%;
+}
+
+#homeContainer h1 {
+  font-size: 3em;
+}
+
+#homeContainer p {
+  font-size: 1.25em;
 }

@@ -9,12 +9,16 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      models.Choice.belongsTo(models.Question);
     }
   }
   Choice.init(
     {
-      name: DataTypes.STRING,
-      weight: DataTypes.INTEGER,
+      label: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      questionId: DataTypes.INTEGER,
     },
     {
       sequelize,
