@@ -3,14 +3,10 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.removeColumn('Choices', {
-      name: {
-        type: Sequelize.STRING,
-      },
-    });
+    await queryInterface.removeColumn('Choices', 'name');
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.removeColumn('Choices');
+    await queryInterface.dropTable('Choices');
   },
 };
